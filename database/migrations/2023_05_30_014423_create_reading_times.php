@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('reading_times', function (Blueprint $table) {
             $table->id();
             $table->string('read_time');
+            $table->string('durations');
             $table->timestamps();
         });
     }
